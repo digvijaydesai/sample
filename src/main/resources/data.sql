@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS event;
+
+CREATE TABLE event (
+  identifier INT AUTO_INCREMENT PRIMARY KEY,
+  id VARCHAR(200) NOT NULL,
+  type VARCHAR(20) DEFAULT NULL,
+  host VARCHAR(250) DEFAULT NULL,
+  duration long NOT NULL,
+  alert boolean DEFAULT FALSE
+);
